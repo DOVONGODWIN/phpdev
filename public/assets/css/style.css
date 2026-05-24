@@ -1,0 +1,33 @@
+/* ===== Pages d'authentification — clair & minimaliste ===== */
+/* Scopé sous .auth : n'affecte que login et register */
+
+.auth {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 24px;
+    background: #fafaf8;
+    color: #1a1a1a;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+}
+.auth h1 { width: 100%; max-width: 380px; margin: 0; font-size: 26px; font-weight: 600; letter-spacing: -0.01em; }
+.auth .lead { width: 100%; max-width: 380px; margin: 0 0 18px; color: #6b7280; font-size: 15px; }
+.auth form { width: 100%; max-width: 380px; background: #fff; border: 1px solid #e5e5e0; border-radius: 14px; padding: 28px 26px; box-shadow: 0 1px 3px rgba(0,0,0,.04), 0 8px 24px -12px rgba(0,0,0,.12); }
+.auth label { display: block; margin: 16px 0 6px; font-size: 13px; font-weight: 500; color: #6b7280; }
+.auth form label:first-of-type { margin-top: 0; }
+.auth input { width: 93%; padding: 11px 13px; font-size: 15px; color: #1a1a1a; background: #fff; border: 1px solid #e5e5e0; border-radius: 9px; transition: border-color .15s, box-shadow .15s; }
+.auth input::placeholder { color: #9ca3af; }
+.auth input:focus { outline: none; border-color: #2f6f4e; box-shadow: 0 0 0 3px rgba(47,111,78,.12); }
+.auth button { width: 100%; margin-top: 22px; padding: 12px; font-size: 15px; font-weight: 600; color: #fff; background: #2f6f4e; border: none; border-radius: 9px; cursor: pointer; transition: background .15s, transform .1s; }
+.auth button:hover { background: #27613f; }
+.auth button:active { transform: translateY(1px); }
+.auth .msg { width: 100%; max-width: 380px; margin: 16px 0 0; padding: 11px 14px; font-size: 14px; border-radius: 9px; border: 1px solid; }
+.auth .msg-ok { color: #166534; background: #f0fdf4; border-color: #bbf7d0; }
+.auth .msg-err { color: #b91c1c; background: #fef2f2; border-color: #fecaca; }
+.auth .switch { width: 100%; max-width: 380px; margin: 18px 0 0; font-size: 14px; color: #6b7280; }
+.auth .switch a { color: #2f6f4e; font-weight: 500; text-decoration: none; }
+.auth .switch a:hover { text-decoration: underline; }
